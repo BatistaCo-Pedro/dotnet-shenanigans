@@ -1,0 +1,12 @@
+﻿services:
+  dotnetshenanigans:
+    image: dotnetshenanigans
+    build:
+      context: .
+      dockerfile: DotnetShenanigans/Dockerfile
+
+  expressiontrees:
+    image: expressiontrees
+    build:
+      context: .
+      dockerfile: ExpressionTrees/Dockerfile
