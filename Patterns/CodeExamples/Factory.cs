@@ -1,4 +1,4 @@
-﻿namespace Patterns;
+﻿namespace Patterns.Factory;
 
 public interface IProduct
 {
@@ -26,5 +26,19 @@ public class Factory
     public IProduct FactoryMethod(bool condition)
     {
         return condition ? new ConcreteProductA() : new ConcreteProductB();
+    }
+}
+
+public class Program
+{
+    public static void Main()
+    {
+        var factory = new Factory();
+        
+        var productA = factory.FactoryMethod(true);
+        var productB = factory.FactoryMethod(false);
+        
+        productA.Operation();
+        productB.Operation();
     }
 }

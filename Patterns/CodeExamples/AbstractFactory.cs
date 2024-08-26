@@ -1,4 +1,4 @@
-﻿namespace Patterns;
+﻿namespace Patterns.AbstractFactory;
 
 public interface IProductA
 {
@@ -58,5 +58,40 @@ public class ConcreteFactory : IAbstractFactory
     public IProductB CreateProductB()
     {
         return new ConcreteProductB1();
+    }
+}
+
+public class ConcreteFactory2 : IAbstractFactory
+{
+    public IProductA CreateProductA()
+    {
+        return new ConcreteProductA2();
+    }
+
+    public IProductB CreateProductB()
+    {
+        return new ConcreteProductB2();
+    }
+}
+
+public class Program
+{
+    public static void Main()
+    {
+        IAbstractFactory factory = new ConcreteFactory();
+        
+        var productA1 = factory.CreateProductA();
+        var productB1 = factory.CreateProductB();
+        
+        productA1.Operation();
+        productB1.Operation();
+        
+        IAbstractFactory factory2 = new ConcreteFactory2();
+        
+        var productA2 = factory2.CreateProductA();
+        var productB2 = factory2.CreateProductB();
+        
+        productA2.Operation();
+        productB2.Operation();
     }
 }
