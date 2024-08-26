@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patterns", "Patterns\Patter
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algos", "Algos\Algos.csproj", "{5C732DFE-FFAB-4F48-9CEE-CF1C94DD88CF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures", "DataStructures\DataStructures.csproj", "{94F03987-9B27-4FBB-B09D-757ED67D6F14}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,5 +37,9 @@ Global
 		{5C732DFE-FFAB-4F48-9CEE-CF1C94DD88CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C732DFE-FFAB-4F48-9CEE-CF1C94DD88CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C732DFE-FFAB-4F48-9CEE-CF1C94DD88CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94F03987-9B27-4FBB-B09D-757ED67D6F14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94F03987-9B27-4FBB-B09D-757ED67D6F14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94F03987-9B27-4FBB-B09D-757ED67D6F14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94F03987-9B27-4FBB-B09D-757ED67D6F14}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
